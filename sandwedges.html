@@ -1,0 +1,290 @@
+<html>
+	<head>
+	<meta charset="utf-8" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="C:\Users\Shipra\Downloads\sandwedges\bootstrap-3.3.7-dist\css\bootstrap.min.css">
+	<link rel="stylesheet" href="C:\xampp\htdocs\sandwedges\style\animate.css" type="text/css">
+	<link rel="stylesheet" href="C:\xampp\htdocs\sandwedges\style\sandwedges.css" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	
+		<title>SANDWEDGES</title>
+		<link rel="shortcut icon" href="C:\Users\Abhijeet-Upadhyay\Desktop\sandwedges\sandwedges\Favicon.png">
+	
+	<script type="text/javascript" src="C:\Users\Shipra\Downloads\sandwedges\jquery-1.11.3.min.js" ></script>
+	<script type="text/javascript" src="C:\Users\Shipra\Downloads\sandwedges\bootstrap-3.3.7-dist\js\bootstrap.min.js"></script>
+	<script type="text/javascript" src="C:\xampp\htdocs\sandwedges\script\wow.js"></script>
+	<script type="text/javascript" src="C:\xampp\htdocs\sandwedges\script\wow.min.js"></script>
+    <script>
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length) {
+				$('html,body').animate({
+				scrollTop: target.offset().top
+				}, 1000);
+				return false;
+				}
+				}
+			});
+		});
+				$(document).ready(function(){       
+					var scroll_start = 0;
+					var startchange = $('#top');
+					var offset = startchange.offset();
+					if (startchange.length){
+					$(document).scroll(function() { 
+						scroll_start = $(this).scrollTop();
+						if(scroll_start > offset.top) {
+						$(".navbar-default").css('background-color', '#fff');
+						$(".navbar-default").css('height','100px');
+						$('.navbar-nav > li > a ').css('color',"#767676");
+						$(".navbar-brand>img").css('height','56px');
+						$(".navbar-brand>img").css('width','140px');
+						$(".navbar-brand").css('margin-top','9px');
+						$("li").css('margin-top','25px');
+						}
+					});
+					}
+				});  
+$(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('#aboutus');
+   var offset = startchange.offset();
+    if (startchange.length){
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $(".navbar-default").css('background-color', '#fff');
+		  $(".navbar-default").css('height','68px');
+		  $("li").css('margin-top','11px');
+		  $('.navbar-nav > li > a ').css('color',"#767676");
+		  $(".navbar-brand>img").css('height','45px');
+		  $(".navbar-brand>img").css('width','111px');
+		  $(".navbar-brand").css('color','#fff');
+		   $(".navbar-brand").css('margin-top','0px');
+		  $(".navbar").css('color','#fff');}
+   });
+    }
+});
+$(document).ready(function () {
+  $(".navbar-nav li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+  });
+});
+
+
+    function validate() {
+		var error=true;
+
+        if (document.getElementById("name").value == "") {
+            alert("name may not be blank!");
+			document.getElementById("name").focus();
+			error=false;
+        } else if (document.getElementById("email").value == "") {
+            alert("Email may not be blank!");
+			error=false;
+        } else if (document.getElementById("mobileno").value == "") {
+            alert("Mobile No. may not be blank!");
+			error=false;
+        } else if (document.getElementById("message").value == "") {
+            alert("Message may not be blank!");
+			error=false;
+        }
+		else{
+		alert("Your message has been submitted!");
+		}
+		return error;
+	}
+	
+	
+
+		
+
+
+ new WOW().init();
+				</script>
+</head>
+<body>
+	<!-- Navigation bar-->
+	<nav class="navbar  navbar-default navbar-fixed-top" id="my-navbar">
+		<div class="container">
+			<div class="navbar-header" id="top">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="container-fluid">
+					<a href="#" class="navbar-brand"><img src="C:\Users\Shipra\Downloads\sandwedges\image\Logo.png" alt="Sandwedges Logo" height="56px" width="140px"/></a>
+				</div>
+			</div><!--nav bar header-->
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li style="font-family: 'Lato', sans-serif;"><a href="#aboutus" class="color-me">ABOUT US</a></li>
+					<li style="font-family: 'Lato', sans-serif;"><a href="#mgmt">OUR TEAM</a></li>
+					<li style="font-family: 'Lato', sans-serif;"><a href="#menu">MENU</a></li>
+					<li style="font-family: 'Lato', sans-serif;"><a href="#party">PLAN YOUR PARTY</a></li>
+					<li style="font-family: 'Lato', sans-serif;"><a href="#reviews">REVIEWS</a></li>
+					<li style="font-family: 'Lato', sans-serif;"><a href="#franchise">FRANCHISE</a></li>
+					<li style="font-family: 'Lato', sans-serif;"><a href="#media">MEDIA</a></li>
+					<li style="font-family: 'Lato', sans-serif;"><a href="#contact">CONTACT</a></li>
+				</ul>
+			</div>
+		</div> <!--container-->
+	</nav> <!--end of navigation bar-->
+
+	<!--cover page-->
+	<div id="coverpage">
+		<div align="center" style="overflow:hidden;">
+			<img src="C:\Users\Shipra\Downloads\sandwedges\image\banner.jpg" alt="sandwiches" align="center"/>
+		</div>
+	</div><!--end of cover page-->
+	
+	<!--about us page-->
+	<div id="aboutus">
+		<div  align="center">
+			<div style="background-color: aliceblue;padding: 28px;">
+				<p class="wow fadeInLeft animated headingg" data-wow-duration="3s" style="font-family: 'Lato', sans-serif;">About Technobias</p>
+				<br>
+				<p class="wow fadeInRight animated subheadingg" data-wow-duration="3s" style="font-family: 'PT Sans', sans-serif;"><b>Technobias is all about efficient work and happy people!</b></p>
+				<br>
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+						<p class="hcontent" style="font-family: 'PT Sans', sans-serif;">We wanted to ramp up quickly with the best people… Our bookkeepers, developers, designers, customer support—everything is through Upwork.</p>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+				<br>
+			</div>
+			<div class="row our_process">
+			<div style="overflow:hidden;position:relative;">
+			<img src="C:\Users\Shipra\Downloads\sandwedges\image\black-bg.png" >
+			
+			<div style="position:absolute;top: 298px; padding: 30px;color: #9bcbf3;">
+				<div class="col-md-3">
+					<h5 style="font-family: 'Lato', sans-serif;">POST YOUR PROJECT REQUIREMENTS</h5>
+					<p>Our analysts will thoroughly review your project requirements and locate a web development team that is best-suited for your project.</p>
+				</div>		
+				<div class="col-md-3">
+					<h5 style="font-family: 'Lato', sans-serif;">DISCUSS PROJECT DETAILS WITH OUR ANALYSTS</h5>
+					<p>Our experts will contact you within no time to discuss your project related queries and to offer the best solution for your Web requirements.</p>
+				</div>
+				<div class="col-md-3">
+					<h5 style="font-family: 'Lato', sans-serif;">CHOOSE ENGAGEMENT TERMS & TIMELINES</h5>
+					<p>Based on the project consultation provided by our experts, you can choose the engagement timelines for your project development.</p>
+				</div>
+				<div class="col-md-3">
+					<h5 style="font-family: 'Lato', sans-serif;">SECURELY PAY ONLINE AND GET STARTED!</h5>
+					<p>Make payment through our 100% secure online system and our team shall immediately get started on your Web project within 24 hours.</p>
+				</div>
+			</div>
+			</div>
+			</div>
+			
+		</div>
+	</div> <!--end of about us page-->
+	
+	<div class="" style="overflow:hidden;position:relative;">
+	<img src="C:\Users\Shipra\Downloads\sandwedges\image\slide1-bg.jpg">
+	<div style="position:absolute;top: 198px;left: 189px;color: #777777;">
+	<h1>PROFESSIONAL <span style="color:#a94442;">WEB</span> & <span style="color:#a94442;">MOBILE</span> APPLICATION DEVELOPMENT <span style="color:#a94442;">COMPANY</span> NEVER LET YOU PAY MORE THAN YOU <span style="color:#a94442;">NEED</span></h1>
+	</div>
+	</div>
+	
+
+	<!--contact page-->
+	<div id="contact">
+		<div align="center">
+			<p class="headingg" style="font-family: 'Lato', sans-serif;">CONTACT US<br><br></p>
+		</div>
+		<div class="row">
+			<div class="col-md-1"></div>
+			
+			<div class="col-md-5 contactform" style="padding-left:7%; padding-right:7%;">
+				<div id="givfeedback" style="margin-left:5%; margin-right:5%;">
+					<p align="center" style="font-family: 'Lato', sans-serif; font-size:25px;">Wanna Get In Touch With Us<br></p>
+					<form class="form-horizontal" id="myform" role="form" method="POST" action="http://localhost/sandwedges/mailfinal.php"  onsubmit="return validate()">
+						<div class="form-group">
+							<input type="text" class="form-control" id="name" name="name" placeholder="Name" value="">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" id="email" name="email" placeholder="Email Id" value="">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="mobileno" name="mobileno" placeholder="Mobile No.">
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" rows="8" id="message" name="message" placeholder="Message"></textarea>
+						</div>
+						<div class="form-group">
+							<div>
+								<input id="submit" name="submit" type="submit" value="SUBMIT" class="btn btn-warning btn-large btn-xl btn-block">
+							</div>	
+						</div>
+						<div class="form-group">
+							<div class="col-sm-10 col-sm-offset-2">
+							</div>
+						</div>
+					</form>	
+				</div>  
+			</div>
+			<!--to show thank you message on submission of contact form-->
+			<div class="col-md-5" style="padding-left:7%; padding-right:7%; display:none;">
+				<div id="feedbackthanks" style="margin-left:5%; margin-right:5%;">
+					<p align="center" style="font-family: 'Lato', sans-serif; font-size:25px;"><b>THANK YOU</b><br></p>
+					<blockquote>
+						<p class="hcontent">
+						<br>
+						<br>
+						For your Message,
+						<br>
+						<br>
+						<br>
+						Your message has been submitted!
+						<br>
+						</p>
+					</blockquote>
+				</div>  
+			</div>
+			<!--<div class="col-md-1" style="border-right:1px solid black; height:80%"></div>  just replace above code line with this one to draw a line-->
+			
+			
+			
+	
+			
+			
+			<div id="visitus" class="col-md-5" style="padding-left:7%; padding-right:7%;">
+				<p style="font-family: 'Lato', sans-serif; font-size:25px;" align="center">or Visit Us</p>
+				<blockquote>
+					<p style="font-family: 'Lato', sans-serif; font-size:16px;">Raj Nagar</p><p style=" font-family: 'PT Sans', sans-serif; font-size:12px;"> D1/G2,RDC,Behind Axis,Raj Nagar<br>Ghaziabad-201002<br>+91-7503139300<br>Timings:-<br>All Days-10 AM to 10 PM</p>
+					<a href="https://www.google.com/maps?q=28.674731,+77.441955" target="_blank" class="btn btn-warning btn-sm getdirection">GET DIRECTION</a>
+				</blockquote>
+				<blockquote>
+					<p style="font-family: 'Lato', sans-serif; font-size:16px;">Indirapuram</p><p style=" font-family: 'PT Sans', sans-serif; font-size:12px;">D1/G2,RDC,Behind Axis,Raj Nagar<br>Ghaziabad-201002<br>+91-7503139300<br>Timings:-<br>All Days-10 AM to 10 PM</p>
+					<a href="https://www.google.com/maps/place/28%C2%B038'17.8%22N+77%C2%B026'31.0%22E/@28.63827,77.441955,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0" target="_blank" class="btn btn-warning btn-sm getdirection">GET DIRECTION</a>
+				</blockquote>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+	</div>  <!--end of contact page-->
+		
+
+	<div class="container">
+		<div id="follows" align="center">
+			<p style=" font-family: 'PT Sans', sans-serif; font-size:12px;">Follow Us On :</p>
+			<span>
+				<a href="https://www.facebook.com/Sandwedges" target="_blank"><img src="C:\xampp\htdocs\sandwedges\image\facebook.png" height="30px" width="30px" alt="fb" class="rotating" /></a>
+				<a href="https://twitter.com/Sandwedges" target="_blank"><img src="C:\xampp\htdocs\sandwedges\image\twitter.png" height="30px" width="30px" alt="fb" class="rotating" /></a>
+			</span>
+		</div>
+	</div>
+	
+
+
+</body>
+</html>
